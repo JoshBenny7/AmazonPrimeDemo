@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css'>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+     
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/Prime_Video.png" alt="Prime Video" width="100px" height="40px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tv shows.html">TV Shows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="anime.html">Anime</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <!-- Side Navigation -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/user.png" alt="Account" width="30px" height="30px"></a>
+            <a href="subscription.html"><button class="btn btn-primary">Join Prime</button></a>
+            <a href="signup.html">Sign in</a>
+            <a href="#">Languages</a>
+            <a href="#">Help</a>
+            <a href="#">Settings</a>
+            </div>
+
+            <!-- Main content -->
+            <div id="main">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                    <span style="cursor:pointer" onclick="openNav()"><img src="images/user.png" alt="Account" width="30px" height="30px"></span>
+                    </div>
+                 </nav>
+                </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/rings.jpg" alt="Featured 1">
+                <div class="carousel details">
+                    <h1>The Rings of Power</h1><br>
+                    <a href="TV Shows/rings-of-power.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/fallguy.jpg".jpg" alt="Featured 2">
+                <div class="carousel details">
+                    <h1>The Fall Guy</h1><br>
+                    <a href="movies/fallguy.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/theboys.jpg" alt="Featured 3">
+                <div class="carousel details">
+                    <h1>The Boys</h1><br>
+                    <a href="TV Shows/boys.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/conjuring2.jpg" alt="Featured 3">
+                <div class="carousel details">
+                    <h1>The Conjuring 2</h1><br>
+                    <a href="movies/conjuring2.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Movie Rows -->
+    <div class="container my-5">
+        <h2>New Releases</h2>
+        <div class="swiper-container-1">
+            <div class="wrapper">
+                <!-- Movie Card 1 -->
+                <div class="card">
+                    <div class="poster"><img src="images/A_Quiet_Place_Day_One.webp" alt="A Quiet Place: Day One"></div>
+                    <div class="details">
+                        <h1>A Quiet Place: Day One</h1>
+                        <h2>2024 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Horror</span>
+                            <span class="tag">Sci-fi</span>
+                        </div>
+                        <a href="movies/quite_place.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+
+                <!-- Movie Card 2 -->
+                <div class="card">
+                    <div class="poster"><img src="images/godvskong.jpg" alt="Godzilla x Kong: The New Empire"></div>
+                    <div class="details">
+                        <h1>Godzilla x Kong: The New Empire</h1>
+                        <h2>2024 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Sci-fi</span>
+                        </div>
+                        <a href="movies/godzillaxkong.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 3 -->
+                <div class="card">
+                    <div class="poster"><img src="images/it_ends_with_us.jpg" alt="It Ends with Us"></div>
+                    <div class="details">
+                        <h1>It Ends with Us</h1>
+                        <h2>2024 • A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Romance</span>
+                            <span class="tag">Drama</span>
+                        </div>
+                        <a href="movies/it_ends_with_us.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 4 -->
+                <div class="card">
+                    <div class="poster"><img src="images/trap.webp" alt="Trap"></div>
+                    <div class="details">
+                        <h1>Trap</h1>
+                        <h2>2024 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Horror</span>
+                            <span class="tag">Mystery</span>
+                        </div>
+                        <a href="movies/trap.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 5 -->
+                <div class="card">
+                    <div class="poster"><img src="images/kingdom_of_apes.jpeg" alt="Kingdom of the Planet of the Apes"></div>
+                    <div class="details">
+                        <h1>Kingdom of the Planet of the Apes</h1>
+                        <h2>2024 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                        <a href="movies/kingdom_of_apes.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 6 -->
+                <div class="card">
+                    <div class="poster"><img src="images/despicable4.jpeg" alt="Despicable Me 4"></div>
+                    <div class="details">
+                        <h1>Despicable Me 4</h1>
+                        <h2>2024 • U • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Family</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                        <a href="movies/despicable4.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+
+                <!-- Movie Card 7 -->
+                <div class="card">
+                    <div class="poster"><img src="images/if.webp" alt="IF"></div>
+                    <div class="details">
+                        <h1>IF</h1>
+                        <h2>2024 • U • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag yellow">Family</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                        <a href="movies/if.html"></a><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 8 -->
+                <div class="card">
+                    <div class="poster"><img src="images/Borderlands.jpg" alt="Borderlands"></div>
+                    <div class="details">
+                        <h1>Borderlands</h1>
+                        <h2>2024 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag yellow">Family</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                        <a href="movies/borderlands.html"></a><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-prev">&lt;</div>
+            <div class="swiper-button-next">&gt;</div>
+        </div>
+    </div>
+    <!-- TV Shows-->
+    <div class="container my-5">
+        <h2>Top Movies</h2>
+        <div class="swiper-container-2">
+            <div class="wrapper">
+                <!-- Movie Card 1 -->
+                <div class="card">
+                    <div class="poster"><img src="images/mission_impossible7.jpg" alt="Mission: Impossible – Dead Reckoning"></div>
+                    <div class="details">
+                        <h1>Mission: Impossible – Dead Reckoning</h1>
+                        <h2>2023 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Thriller</span>
+                        </div>
+                        <a href="movies/missionimpossible7.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+
+                <!-- Movie Card 2 -->
+                <div class="card">
+                    <div class="poster"><img src="images/joker.jpg" alt="Joker"></div>
+                    <div class="details">
+                        <h1>Joker</h1>
+                        <h2>2019 • A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Thriller</span>
+                            <span class="tag">Crime</span>
+                        </div>
+                        <a href="movies/joker.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 3 -->
+                <div class="card">
+                    <div class="poster"><img src="images/interstellar.jpg" alt="Interstellar"></div>
+                    <div class="details">
+                        <h1>Interstellar</h1>
+                        <h2>2016 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-fi</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                        <a href="movies/interstellar.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 4 -->
+                <div class="card">
+                    <div class="poster"><img src="images/worldwarz.jpg" alt="World War Z"></div>
+                    <div class="details">
+                        <h1>World War Z</h1>
+                        <h2>2013 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Horror</span>
+                            <span class="tag">Action</span>
+                        </div>
+                        <a href="movies/worldwarz.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 5 -->
+                <div class="card">
+                    <div class="poster"><img src="images/spiderman.webp" alt="Spider-Man: Across the Spider-Verse"></div>
+                    <div class="details">
+                        <h1>Spider-Man: Across the Spider-Verse</h1>
+                        <h2>2023 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                        <a href="movies/spiderman.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 6 -->
+                <div class="card">
+                    <div class="poster"><img src="images/transformers.jpeg" alt="Transformers: Rise of the Beasts"></div>
+                    <div class="details">
+                        <h1>Transformers: Rise of the Beasts</h1>
+                        <h2>2023 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Sci-fi</span>
+                        </div>
+                        <a href="movies/transformers6.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                </div>
+                </div>
+                <!-- Movie Card 7 -->
+                <div class="card">
+                    <div class="poster"><img src="images/sonic.jpg" alt="Sonic the Hedgehog 3"></div>
+                    <div class="details">
+                        <h1>Sonic the Hedgehog 3</h1>
+                        <h2>2024 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag yellow">Action</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                        <a href="movies/sonic3.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 8 -->
+                <div class="card">
+                    <div class="poster"><img src="images/johnwick4.jpg" alt="John Wick: Chapter 4"></div>
+                    <div class="details">
+                        <h1>John Wick: Chapter 4</h1>
+                        <h2>2023 • U/A • Movie</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag yellow">Action</span>
+                            <span class="tag">Thriller</span>
+                        </div>
+                        <a href="movies/johnwick4.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-prev_2">&lt;</div>
+            <div class="swiper-button-next_2">&gt;</div>
+        </div>
+    </div>
+    <!--New Releases-->
+    <div class="container my-5">
+        <h2>Top TV Shows</h2>
+        <div class="swiper-container-3">
+            <div class="wrapper">
+                <!-- Movie Card 1 -->
+                <div class="card">
+                    <div class="poster"><img src="images/boys.jpg" alt="The Boys"></div>
+                    <div class="details">
+                        <h1>The Boys</h1>
+                        <h2>2019 • TV-MA • TV Show</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Horror</span>
+                            <span class="tag">Drama</span>
+                        </div>
+                        <a href="TV Shows/boys.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                </div>
+                </div>
+                <!-- Movie Card 2 -->
+                <div class="card">
+                    <div class="poster"><img src="images/jack _ryan.jpg" alt="Jack Ryan"></div>
+                    <div class="details">
+                        <h1>Jack Ryan</h1>
+                        <h2>2018 • TV-PG • TV Show</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                        <a href="TV Shows/jack-ryan.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 3 -->
+                <div class="card">
+                    <div class="poster"><img src="images/rings_of_power.jpg" alt="The Rings of Power"></div>
+                    <div class="details">
+                        <h1>The Rings of Power</h1>
+                        <h2>2023 • TV-PG • TV Show</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Fantasy</span>
+                            <span class="tag">Drama</span>
+                        </div>
+                        <a href="TV Shows/rings-of-power.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 4 -->
+                <div class="card">
+                    <div class="poster"><img src="images/flash.webp" alt="The Flash"></div>
+                    <div class="details">
+                        <h1>The Flash</h1>
+                        <h2>2014 • TV-PG • TV Show</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star-half-alt"></i>
+                            <span>4.5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Superhero</span>
+                        </div>
+                        <a href="TV Shows/flash.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 5 -->
+                <div class="card">
+                    <div class="poster"><img src="images/bigbang_thoery.jpg" alt="The Big Bang Thoery"></div>
+                    <div class="details">
+                        <h1>The Big Bang Thoery</h1>
+                        <h2>2023 • TV-PG • Sitcom</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Sci-fi</span>
+                        </div>
+                        <a href="TV Shows/bigbang.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 6 -->
+                <div class="card">
+                    <div class="poster"><img src="images/legacies.jpg"g" alt="Legacies"></div>
+                    <div class="details">
+                        <h1>Legacies</h1>
+                        <h2>2018 • TV-MA • TV Show</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Supernatural</span>
+                            <span class="tag">Drama</span>
+                        </div>
+                        <a href="TV Shows/legacies.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+
+                <!-- Movie Card 7 -->
+                <div class="card">
+                    <div class="poster"><img src="images/wheel_of_time.jpg" alt="The Wheel of Time"></div>
+                    <div class="details">
+                        <h1>The Wheel of Time</h1>
+                        <h2>2021 • TV-14 • TV Series</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag yellow">Fantasy</span>
+                            <span class="tag">Drama</span>
+                        </div>
+                        <a href="TV Shows/wheel-of-time.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                <!-- Movie Card 8 -->
+                <div class="card">
+                    <div class="poster"><img src="images/walkingdead.jpg" alt="The Walking Dead"></div>
+                    <div class="details">
+                        <h1>The Walking Dead</h1>
+                        <h2>2010 • TV-MA • TV Series</h2>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag yellow">Horror</span>
+                            <span class="tag">Drama</span>
+                        </div>
+                        <a href="TV Shows/walking-dead.html"><button class="btn btn-primary"><i class="fas fa-play"></i> Watch with Prime</button></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-prev_3">&lt;</div>
+            <div class="swiper-button-next_3">&gt;</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Prime Video | Terms of Use | Privacy Policy | Help</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

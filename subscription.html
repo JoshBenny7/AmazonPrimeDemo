@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Join Prime</title>
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif !important;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 100px 0;
+    background: #000000;
+}
+
+.card {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    /* background: linear-gradient(-45deg, #fe0847, #feae3f); */
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.col-sm-4:nth-child(1) .card,
+.col-sm-4:nth-child(1) .card .title .fas {
+    background: linear-gradient(-45deg, #b6b8b8, #1bb6f3);
+}
+
+.col-sm-4:nth-child(2) .card,
+.col-sm-4:nth-child(2) .card .title .fas {
+    background: linear-gradient(-45deg, #b4b8ba, #1c87fa);
+}
+
+.col-sm-4:nth-child(3) .card,
+.col-sm-4:nth-child(3) .card .title .fas {
+    background: linear-gradient(-45deg, #dee0e1, #043eec);
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    transform: skewY(-5deg) scale(1.5);
+}
+
+.title .fas {
+    color: #fff;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title h2 {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0;
+    color: #000000;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.price {
+    position: relative;
+    z-index: 2;
+}
+
+.price h4 {
+    margin: 0;
+    padding: 20px 0;
+    color: #000000;
+    font-size: 40px;
+}
+
+.option {
+    position: relative;
+    z-index: 2;
+}
+
+.option ul {
+    margin: 0;
+    padding: 0;
+}
+
+.option ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.card a {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    color: #262626;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.bttn:hover {
+    background-color: #000000;
+    color: #2e8cf7;
+}
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <div class="title">
+                                <i class="fas fa-paper-plane"></i>
+                                <h2>Prime Lite</h2>
+                            </div>
+                            <div class="price">
+                                <h4>
+                                    ₹125 / month
+                                </h4>
+                            </div>
+                            <div class="option">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i> Mobile , TV
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i> 1 device
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i> Free Delivery & Music
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-times"></i> Ad free
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="bttn">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <div class="title">
+                                <i class="fas fa-plane"></i>
+                                <h2>Prime</h2>
+                            </div>
+                            <div class="price">
+                                <h4>
+                                    ₹299 / month
+                                </h4>
+                            </div>
+                            <div class="option">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i> Mobile, TV, Laptop
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i> 5 Devices
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i> Free Delivery & Music
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i> Ad Free
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="bttn">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <div class="title">
+                                <i class="fas fa-rocket"></i>
+                                <h2>Prime Annual</h2>
+                            </div>
+                            <div class="price">
+                                <h4>
+                                    ₹1499 / year
+                                </h4>
+                            </div>
+                            <div class="option">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i> Mobile, TV, Laptop
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i> 5 devices
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i> Free Delivery & Music
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i> Ad free
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="bttn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
